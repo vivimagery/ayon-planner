@@ -101,21 +101,23 @@ class ZipFileLongPaths(zipfile.ZipFile):
 
 
 def _get_yarn_executable() -> Union[str, None]:
-    cmd = "which"
-    if platform.system().lower() == "windows":
-        cmd = "where"
+    """Return path to Yarn executable or None if not available."""
 
-    for line in subprocess.check_output(
-        [cmd, "yarn"], encoding="utf-8"
-    ).splitlines():
-        if not line or not os.path.exists(line):
-            continue
-        try:
-            subprocess.call([line, "--version"])
-            return line
-        except OSError:
-            continue
-    return None
+    yarn_path = shutil.which("yarn")
+    if not yarn_path:
+        return None
+
+    try:
+        # Verify that the yarn executable is callable.
+        subprocess.check_call(
+            [yarn_path, "--version"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+    except (OSError, subprocess.CalledProcessError):
+        return None
+
+    return yarn_path
 
 
 def safe_copy_file(src_path: str, dst_path: str):
