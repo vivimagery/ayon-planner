@@ -1,0 +1,366 @@
+[
+   {
+      "endDate" : "2024-07-05",
+      "id" : "ba2247c5-fce3-42ea-9d93-ad5d330886ed",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "St. Cyril and Methodius Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2024-07-05",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2024-07-06",
+      "id" : "2a768b05-2e14-46c3-b69d-c6200c1f8d5d",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Day of the Burning of Jan Hus"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2024-07-06",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2024-09-28",
+      "id" : "e8c654a1-e11d-4012-b572-a521f0d47321",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Czech Statehood Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2024-09-28",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2024-10-28",
+      "id" : "6aa38cfc-c7dc-42c1-b667-8e559bbfc4be",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Independence Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2024-10-28",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2024-11-17",
+      "id" : "4f39623d-0548-441a-8879-dd505ff63a3c",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Day of Struggle for Freedom and Democracy"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2024-11-17",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2024-12-24",
+      "id" : "555eea2e-396a-4b3f-a883-6e8874f4306f",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Christmas Eve"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2024-12-24",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2024-12-25",
+      "id" : "e91aede5-7dfb-4f94-a822-e1f452c13b70",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Christmas Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2024-12-25",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2024-12-26",
+      "id" : "f8015cfa-183a-459f-84ce-b4167533c793",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Second Christmas Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2024-12-26",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2025-01-01",
+      "id" : "1d9d3f2f-00c1-4810-9966-acdac6692dde",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Day of the Restoration of the Independent Czech State"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2025-01-01",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2025-01-01",
+      "id" : "8521c2eb-7191-4d15-94e9-6df3d4763e9b",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "New Year's Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2025-01-01",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2025-04-18",
+      "id" : "06d2510c-7219-45b7-90dc-914d7c16328d",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Good Friday"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2025-04-18",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2025-04-21",
+      "id" : "07cd58ba-79e8-48a5-a419-1c0010a7fc49",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Easter Monday"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2025-04-21",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2025-05-01",
+      "id" : "d0488900-0cb3-414b-a3b5-f88b845c500e",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Labour Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2025-05-01",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2025-05-08",
+      "id" : "9fcc074c-3cd6-47f6-9a8c-7e4b8c5cfd4d",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Liberation Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2025-05-08",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2025-07-05",
+      "id" : "feb49b3b-341e-4759-b2c5-46ac7d2d12ca",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "St. Cyril and Methodius Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2025-07-05",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2025-07-06",
+      "id" : "0abee2c5-660f-4518-9073-1624642ad3f1",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Day of the Burning of Jan Hus"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2025-07-06",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2025-09-28",
+      "id" : "1de31c5c-a9af-45af-a269-bcf8ab89d77f",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Czech Statehood Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2025-09-28",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2025-10-28",
+      "id" : "39c6781d-5eb1-4446-a889-828914e08478",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Independence Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2025-10-28",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2025-11-17",
+      "id" : "1a6b66cc-cacc-4dde-b185-7f965dcec5dc",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Day of Struggle for Freedom and Democracy"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2025-11-17",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2025-12-24",
+      "id" : "e1dbfe82-90f9-465f-8d1a-b37aac3ae538",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Christmas Eve"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2025-12-24",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2025-12-25",
+      "id" : "453b2f83-0b27-4f57-8aef-7698f5c19ae7",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Christmas Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2025-12-25",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2025-12-26",
+      "id" : "6461123f-b5d4-464a-9aec-f7c32e7f3e7a",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Second Christmas Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2025-12-26",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2026-01-01",
+      "id" : "8a4b3dcf-98e0-4fbf-ba5f-89e0ead33a4a",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Day of the Restoration of the Independent Czech State"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2026-01-01",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2026-01-01",
+      "id" : "eaa11346-d1c5-4b7d-a69e-abb1cde8bdcd",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "New Year's Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2026-01-01",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2026-04-03",
+      "id" : "9e271cee-c48b-4c8b-8139-3c8f25dbef31",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Good Friday"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2026-04-03",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2026-04-06",
+      "id" : "0fb4c9ff-c62e-4487-92be-848c1fdbd691",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Easter Monday"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2026-04-06",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2026-05-01",
+      "id" : "1efe901c-b491-40db-a924-d6aec650d5ad",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Labour Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2026-05-01",
+      "type" : "Public"
+   },
+   {
+      "endDate" : "2026-05-08",
+      "id" : "fe81c1ec-9607-41dd-8a17-8648bc9993fa",
+      "name" : [
+         {
+            "language" : "EN",
+            "text" : "Liberation Day"
+         }
+      ],
+      "nationwide" : true,
+      "startDate" : "2026-05-08",
+      "type" : "Public"
+   }
+]
