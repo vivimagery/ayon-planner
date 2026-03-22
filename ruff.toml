@@ -28,7 +28,7 @@ exclude = [
     "venv",
 ]
 
-# Same as Black.
+# Project line length (79 characters).
 line-length = 79
 indent-width = 4
 

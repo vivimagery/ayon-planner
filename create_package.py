@@ -17,8 +17,8 @@ package will be created. Existing package directory will always be purged if
 already present! This could be used to create package directly in server folder
 if available.
 
-Package contains server side files directly,
-client side code zipped in `private` subfolder.
+Package contains server-side files directly and optional client-side assets,
+copied into the appropriate subfolders (for example the `private` subfolder).
 """
 
 import os
@@ -39,8 +39,6 @@ import package
 FileMapping = Tuple[Union[str, io.BytesIO], str]
 ADDON_NAME: str = package.name
 ADDON_VERSION: str = package.version
-ADDON_CLIENT_DIR: Union[str, None] = getattr(package, "client_dir", None)
-
 CURRENT_ROOT: str = os.path.dirname(os.path.abspath(__file__))
 SERVER_ROOT: str = os.path.join(CURRENT_ROOT, "server")
 FRONTEND_ROOT: str = os.path.join(CURRENT_ROOT, "frontend")
@@ -49,11 +47,6 @@ DST_DIST_DIR: str = os.path.join("frontend", "dist")
 PRIVATE_ROOT: str = os.path.join(CURRENT_ROOT, "private")
 PUBLIC_ROOT: str = os.path.join(CURRENT_ROOT, "public")
 CLIENT_ROOT: str = os.path.join(CURRENT_ROOT, "client")
-
-VERSION_PY_CONTENT = f'''# -*- coding: utf-8 -*-
-"""Package declaring AYON addon '{ADDON_NAME}' version."""
-__version__ = "{ADDON_VERSION}"
-'''
 
 # Patterns of directories to be skipped for server part of addon
 IGNORE_DIR_PATTERNS: List[Pattern] = [
@@ -165,8 +158,8 @@ def find_files_in_subdir(
             to match directories to ignore.
 
     Returns:
-        list[tuple[str, str]]: List of tuples with path to file and parent
-            directories relative to 'src_path'.
+        list[tuple[str, str]]: List of tuples with absolute path to file
+            and relative file path (including filename) from 'src_path'.
     """
 
     if ignore_file_patterns is None:
@@ -205,12 +198,16 @@ def build_frontend():
     if yarn_executable is None:
         raise RuntimeError("Yarn executable was not found.")
 
-    subprocess.run([yarn_executable, "install"], cwd=FRONTEND_ROOT)
-    subprocess.run([yarn_executable, "build"], cwd=FRONTEND_ROOT)
-    if not os.path.exists(FRONTEND_DIST_ROOT):
-        raise RuntimeError(
-            "Frontend build failed. Did not find 'dist' folder."
-        )
+    # Clean existing dist to avoid packaging stale artifacts
+    if os.path.exists(FRONTEND_DIST_ROOT):
+        shutil.rmtree(FRONTEND_DIST_ROOT)
+
+    subprocess.run(
+        [yarn_executable, "install"], cwd=FRONTEND_ROOT, check=True
+    )
+    subprocess.run(
+        [yarn_executable, "build"], cwd=FRONTEND_ROOT, check=True
+    )
 
 
 def get_base_files_mapping() -> List[FileMapping]:
@@ -316,6 +313,12 @@ def main(
 
     if os.path.exists(FRONTEND_ROOT) and not keep_sources:
         build_frontend()
+    elif keep_sources and os.path.exists(FRONTEND_ROOT):
+        if not os.path.exists(FRONTEND_DIST_ROOT):
+            raise RuntimeError(
+                "Cannot use --keep-sources: 'frontend/dist' does not exist."
+                " Build the frontend first or remove --keep-sources."
+            )
 
     files_mapping: List[FileMapping] = []
     files_mapping.extend(get_base_files_mapping())
